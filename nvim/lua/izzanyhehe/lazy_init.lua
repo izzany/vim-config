@@ -12,6 +12,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-    spec = "izzanyhehe.plugins",
-    change_detection = { notify = false }
+    spec = {
+        { import = "izzanyhehe.plugins" },
+    },
+    install = { colorscheme = { "flexoki-dark", "tokyonight-night" } },
+    checker = { enabled = true },
+    change_detection = { notify = false },
 })

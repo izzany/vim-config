@@ -86,14 +86,3 @@ vim.api.nvim_create_autocmd("FileType", {
         vim.opt_local.linebreak = true
     end
 })
-
--- Setup lazy.nvim
-require("lazy").setup({
-    spec = {
-        { import = "plugins" },
-    },
-    -- colorscheme that will be used when installing plugins.
-    install = { colorscheme = { "flexoki-dark", "tokyonight-night" } },
-    -- automatically check for plugin updates
-    checker = { enabled = true },
-})
